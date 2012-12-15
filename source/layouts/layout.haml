@@ -19,7 +19,7 @@
       .twelve.columns
         %h2 Welcome to Foundation on Middleman
         %p This is version 3.2.3.
-        %hr/
+        %hr
     .row
       .eight.columns
         %h3 The Grid
@@ -85,19 +85,16 @@
         %ul.disc
           %li
             %a{:href => "http://foundation.zurb.com/docs"} Foundation Documentation
-            = succeed "Everything" do
-              %br/
-            you need to know about using the framework.
+            %br
+            Everything you need to know about using the framework.
           %li
             %a{:href => "http://github.com/zurb/foundation"} Foundation on Github
-            = succeed "Latest" do
-              %br/
-            code, issue reports, feature requests and more.
+            %br
+            Latest code, issue reports, feature requests and more.
           %li
             %a{:href => "http://twitter.com/foundationzurb"} @foundationzurb
-            = succeed "Ping" do
-              %br/
-            us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
+            %br
+            Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
     / Included JS Files (Uncompressed)
     = javascript_include_tag "foundation/jquery",
                              "foundation/jquery.cookie",
