@@ -1,0 +1,12 @@
+/* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
+/* zurb.com */
+
+/* Foundation Middleman template was made by Travis Vocino, ui/ux designer and startup guy in San Francisco, CA */
+/* vocino.com */
+
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Orbit, Reveal
+  Software: Coda, Textmate, Git
