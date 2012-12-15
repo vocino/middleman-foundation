@@ -8,7 +8,7 @@
   %head
     %meta{:charset => "utf-8"}/
     / Set the viewport width to device width for mobile
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "ZURB Foundation"
     / Included CSS Files
     = stylesheet_link_tag "app"
@@ -95,24 +95,24 @@
               %br/
             us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
     / Included JS Files (Uncompressed)
-    %script{:src => "javascripts/foundation/jquery.js"}
-    %script{:src => "javascripts/foundation/jquery.cookie.js"}
-    %script{:src => "javascripts/foundation/jquery.event.move.js"}
-    %script{:src => "javascripts/foundation/jquery.event.swipe.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.accordion.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.alerts.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.buttons.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.clearing.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.forms.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.joyride.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.magellan.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.mediaQueryToggle.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.navigation.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.orbit.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.reveal.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.tabs.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.tooltips.js"}
-    %script{:src => "javascripts/foundation/jquery.foundation.topbar.js"}
-    %script{:src => "javascripts/foundation/jquery.placeholder.js"}
+    = javascript_include_tag "foundation/jquery",
+                             "foundation/jquery.cookie",
+                             "foundation/jquery.event.move", 
+                             "foundation/jquery.event.swipe", 
+                             "foundation/jquery.foundation.accordion", 
+                             "foundation/jquery.foundation.alerts", 
+                             "foundation/jquery.foundation.buttons",
+                             "foundation/jquery.foundation.clearing",
+                             "foundation/jquery.foundation.forms",
+                             "foundation/jquery.foundation.joyride",
+                             "foundation/jquery.foundation.magellan",
+                             "foundation/jquery.foundation.mediaQueryToggle",
+                             "foundation/jquery.foundation.navigation",
+                             "foundation/jquery.foundation.orbit",
+                             "foundation/jquery.foundation.reveal",
+                             "foundation/jquery.foundation.tabs",
+                             "foundation/jquery.foundation.tooltips",
+                             "foundation/jquery.foundation.topbar",
+                             "foundation/jquery.placeholder"
     / Application Javascript, safe to override
-    %script{:src => "javascripts/foundation/app.js"}
+    = javascript_include_tag "foundation/app"
