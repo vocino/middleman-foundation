@@ -11,12 +11,13 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title= data.page.title || "ZURB Foundation"
     / Included CSS Files
-    %link{:href => "stylesheets/app.css", :rel => "stylesheet"}
-      %script{:src => "javascripts/foundation/modernizr.foundation.js"}
+    = stylesheet_link_tag "app"
+    = javascript_include_tag "foundation/modernizr.foundation"
+    
   %body{:class => page_classes}
     .row
       .twelve.columns
-        %h2 Welcome to Foundation
+        %h2 Welcome to Foundation on Middleman
         %p This is version 3.2.3.
         %hr/
     .row
