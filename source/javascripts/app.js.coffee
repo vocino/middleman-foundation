@@ -1,9 +1,13 @@
 #= require "foundation/jquery"
 
 # Foundation Javascript
+#= require "foundation/modernizr.foundation"
+#= require "foundation/jquery.placeholder"
+#= require "foundation/jquery.offcanvas"
 #= require "foundation/jquery.cookie"
 #= require "foundation/jquery.event.move"
 #= require "foundation/jquery.event.swipe"
+#= require "foundation/jquery.foundation.utils"
 #= require "foundation/jquery.foundation.accordion"
 #= require "foundation/jquery.foundation.alerts"
 #= require "foundation/jquery.foundation.buttons"
@@ -18,7 +22,6 @@
 #= require "foundation/jquery.foundation.tabs"
 #= require "foundation/jquery.foundation.tooltips"
 #= require "foundation/jquery.foundation.topbar"
-#= require "foundation/jquery.placeholder"
 
 (($, window, undefined_) ->
   "use strict"

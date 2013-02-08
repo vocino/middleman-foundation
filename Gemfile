@@ -1,4 +1,4 @@
 source :rubygems
 
 gem "middleman"
-gem "zurb-foundation"
+gem "zurb-foundation", "~> 3.2"
