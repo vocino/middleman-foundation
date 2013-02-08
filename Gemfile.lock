@@ -112,4 +112,4 @@ PLATFORMS
 
 DEPENDENCIES
   middleman
-  zurb-foundation
+  zurb-foundation (~> 3.2)
