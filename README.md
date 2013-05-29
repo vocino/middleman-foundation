@@ -2,6 +2,8 @@
 
 Middleman-Foundation is a [Middleman 3.x](http://middlemanapp.com/) project template with the [Compass](http://compass-style.org) and [SCSS](http://sass-lang.com/) version of the [ZURB Foundation](http://foundation.zurb.com/) using [HAML](http://haml-lang.com/). As with all Middleman templates, using [Bundler](http://gembundler.com/) and [RVM](https://rvm.io/) is recommended.
 
+This project template has been updated to support Foundation 4.
+
 ## Installation ##
 
 Clone into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`.
