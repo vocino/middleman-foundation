@@ -1,0 +1,33 @@
+// $icons-layout: smart
+// $icons-sprite-dimensions: true
+// @import "../images/icons/*.png"
+// @include all-icons-sprites
+
+// $icons-2x-layout: smart
+// $icons-2x-sprite-dimensions: true
+// @import "../images/icons-2x/*.png"
+// @include all-icons-2x-sprites
+
+// $sprites: sprite-map("../images/icons/*.png")
+// $sprites2x: sprite-map("../images/icons-2x/*.png", $spacing: 10px)
+
+$icons-layout: horizontal
+$icons-2x-layout: horizontal
+
+=sprite-background($name)
+  background-repeat: no-repeat
+  display: block
+  background-image: sprite-url($sprites)
+  background-position: sprite-position($sprites, $name)
+  height: image-height(sprite-file($sprites, $name))
+  width: image-width(sprite-file($sprites, $name))
+  text-indent: -9999px
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5)
+    background-image: sprite-url($sprites2x)
+    background-position: 0 round(nth(sprite-position($sprites2x, $name), 2) / 2)
+    height: round(image-height(sprite-file($sprites2x, $name)) / 2)
+    width: round(image-width(sprite-file($sprites2x, $name)) /2 )
+
+    /* treat the @2x retina sprite sheet as 50% wide for double resolution upon display */
+    +background-size(ceil(image-width(sprite-path($sprites2x)) / 2) auto)
