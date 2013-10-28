@@ -2,9 +2,6 @@
 # Compass
 ###
 
-# ZURB Foundation
-require "zurb-foundation"
-
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact

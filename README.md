@@ -1,6 +1,6 @@
 # Middleman Template: ZURB Foundation #
 
-Middleman-Foundation is a [Middleman 3.x](http://middlemanapp.com/) project template with the [Compass](http://compass-style.org) and [SCSS](http://sass-lang.com/) version of the [ZURB Foundation](http://foundation.zurb.com/) using [HAML](http://haml-lang.com/). As with all Middleman templates, using [Bundler](http://gembundler.com/) and [RVM](https://rvm.io/) is recommended.
+Middleman-Foundation is a [Middleman 3.x](http://middlemanapp.com/) project template the [SCSS](http://sass-lang.com/) version of [ZURB Foundation](http://foundation.zurb.com/).  This template no longer requires compass as it uses the Foundation standalone SCSS branch as an upstream.  This should help streamline development a little bit.  You can easily add Compass to your project if you desire and if you really want the Compass Foundation gem in your Middleman project, you don't need a template.  Simply add it to your gemfile and follow the instructions.
 
 This project template has been updated to support Foundation 4.
 
