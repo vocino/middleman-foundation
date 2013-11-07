@@ -38,7 +38,7 @@ page "humans.txt", :layout => false
 # activate :automatic_image_sizes
 
 # Livereload
-activate :livereload
+#activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
